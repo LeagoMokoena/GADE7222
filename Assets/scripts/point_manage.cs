@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class point_manage : MonoBehaviour
 {
-    public GameObject[] pts;
+    [SerializeField] public Transform[] pts;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,15 +17,15 @@ public class point_manage : MonoBehaviour
         
     }
 
-    public Vector3 find(int po, bool che = false)
+    /*public Vector3 find(int po, bool che = false)
     {
         foreach(GameObject pi in pts)
         {
-            if(pi.GetComponent<_waypoints>().current == po && pi.GetComponent<_waypoints>().route)
+            if(pi.GetComponent<_waypoints>().current == po)
             {
                 return pi.transform.position;
             }
         }
         return new Vector3();
-    }
+    }*/
 }

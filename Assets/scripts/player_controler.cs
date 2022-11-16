@@ -20,8 +20,13 @@ public class player_controler : MonoBehaviour
         float zdir = Input.GetAxis("Vertical");
 
         Vector3 movedir = new Vector3(xdir, 0.0f, zdir);
-
+        SFXmanger.Instance.PlaySound("engine");
         transform.position += movedir * sp;
+
+        if(gameObject.transform.position.y < 0)
+        {
+            SFXmanger.Instance.PlaySound("death");
+        }
     }
     // Update is called once per frame
     /*void FixedUpdate()

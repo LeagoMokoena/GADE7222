@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Animations;
 
 public class target : StateMachineBehaviour
 {
-    public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex, AnimatorControllerPlayable controller)
+    public int i = 0;
+    public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.gameObject.GetComponent<racer_mesh>().agent.destination = GameObject.FindObjectOfType<point_manage>().find(animator.GetInteger("current_check") + 1, animator.GetBool("cheat"));
+        animator.gameObject.GetComponent<racer_mesh>().agent.destination = GameObject.FindObjectOfType<point_manage>().pts[animator.GetInteger("currentcheck") +1].position;
     }
 
     // Start is called before the first frame update

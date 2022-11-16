@@ -369,6 +369,7 @@
 "Assets/scripts/point_manage.cs"
 "Assets/scripts/racer_mesh.cs"
 "Assets/scripts/raceTime.cs"
+"Assets/scripts/SFXmanger.cs"
 "Assets/scripts/target.cs"
 "Assets/scripts/WaypointManager.cs"
 "Assets/scripts/_waypoints.cs"

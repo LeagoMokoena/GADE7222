@@ -13,7 +13,7 @@ public class _waypoints : MonoBehaviour
         {
             return;
         }
-        other.gameObject.GetComponent<Animator>().SetInteger("current", current);
+        other.gameObject.GetComponent<Animator>().SetInteger("currentcheck",current);
     }
 
     // Start is called before the first frame update

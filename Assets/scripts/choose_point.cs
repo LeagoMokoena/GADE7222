@@ -7,7 +7,7 @@ public class choose_point : StateMachineBehaviour
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if(Random.Range(0, 1) ==0)
+        if(Random.Range(0, 1) == 0)
         {
             animator.SetBool("cheat", true);
         }

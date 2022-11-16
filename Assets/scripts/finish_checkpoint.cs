@@ -54,6 +54,7 @@ public class finish_checkpoint : MonoBehaviour
     {
         if (other.gameObject.tag == "checkPoint")
         {
+            SFXmanger.Instance.PlaySound("check");
             //Destroy(collision.Gameobject);
             check.Pop();
             CHECKcount.text = "Only " + check.Count.ToString() + " to go";
